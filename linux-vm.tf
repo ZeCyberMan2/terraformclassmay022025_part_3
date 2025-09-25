@@ -13,7 +13,7 @@ resource "azurerm_virtual_network" "network1" {
 resource "azurerm_subnet" "subnet1" {
   name                 = "linux-internal"
   resource_group_name  = azurerm_resource_group.linuxvm.name
-  virtual_network_name = azurerm_virtual_network.netowrk1.name
+  virtual_network_name = azurerm_virtual_network.network1.name
   address_prefixes     = ["192.10.2.0/24"]
 }
 
