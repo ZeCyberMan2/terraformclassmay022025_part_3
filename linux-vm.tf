@@ -20,7 +20,7 @@ resource "azurerm_subnet" "subnet1" {
 resource "azurerm_network_interface" "networkinterface1" {
   name                = "linux-network-interface"
   location            = azurerm_resource_group.linuxvm.location
-  resource_group_name = azurerm_resource_group.linux.name
+  resource_group_name = azurerm_resource_group.linuxvm.name
 
   ip_configuration {
     name                          = "internal"
